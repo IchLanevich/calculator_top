@@ -24,10 +24,6 @@ numberButtons.forEach((button) => {
   });
 });
 
-// if firstOperand, secondOperand, and operatorChoosen
-// when user click on another operator, calculate the first pair of numbers
-// then set is as firstOperand
-
 const assignNumberToOperand = (numberValue) => {
   if (choosenOperator === "") {
     firstOperand = firstOperand.toString() + numberValue.toString();
@@ -57,10 +53,6 @@ const clearCalculator = () => {
   secondOperand = "";
 };
 
-// the requirement for allowUserChooseOperation
-// firstOperand has a value
-// operator choosed
-// dont allow select operator if second operand is empty
 const selectOperator = (operatorName) => {
   if (firstOperand && choosenOperator && secondOperand === "") return;
   if (firstOperand && choosenOperator && secondOperand) {
